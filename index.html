@@ -3,107 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Impressive Application</title>
+    <title>Formula 1 Race Cars</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: #f1f1f1;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
         header {
-            background-color: #282c34;
-            color: white;
-            padding: 20px 0;
+            background-color: #e10600;
+            padding: 20px;
             text-align: center;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
+            font-size: 2.5em;
+            color: #fff;
         }
-        .hero {
-            background-color: #61dafb;
-            color: #282c34;
-            text-align: center;
-            padding: 100px 20px;
+        .content {
+            padding: 20px;
         }
-        .hero h2 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            margin: 20px 0;
-        }
-        .hero button {
-            background-color: #282c34;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            cursor: pointer;
-        }
-        .features {
+        .car-gallery {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
-            padding: 50px 20px;
-            background-color: white;
         }
-        .feature {
-            width: 30%;
+        .car {
+            margin: 20px;
+            background-color: #222;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 300px;
             text-align: center;
         }
-        .feature h3 {
-            font-size: 1.5rem;
-            color: #282c34;
+        .car img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #e10600;
         }
-        .feature p {
-            font-size: 1rem;
-            color: #666;
+        .car h2 {
+            font-size: 1.5em;
+            margin: 15px 0;
+        }
+        .car p {
+            font-size: 1em;
+            padding: 0 15px;
+        }
+        .race-results {
+            margin-top: 50px;
+            text-align: center;
+        }
+        .race-results h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 80%;
+            background-color: #222;
+            border: 1px solid #555;
+        }
+        th, td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #555;
+        }
+        th {
+            background-color: #333;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #333;
         }
         footer {
-            background-color: #282c34;
-            color: white;
+            background-color: #111;
+            color: #777;
             text-align: center;
-            padding: 20px 0;
-        }
-        footer p {
-            margin: 0;
-            font-size: 0.9rem;
+            padding: 15px 0;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Formula 1 Race Cars</h1>
+    </header>
+    <div class="content">
+        <section class="car-gallery">
+            <div class="car">
+                <img src="car1.jpg" alt="F1 Car 1">
+                <h2>Mercedes AMG F1</h2>
+                <p>The Mercedes-AMG Petronas Formula One Team is one of the top teams in Formula 1, known for its powerful cars and precision engineering.</p>
+            </div>
+            <div class="car">
+                <img src="car2.jpg" alt="F1 Car 2">
+                <h2>Red Bull Racing</h2>
+                <p>Red Bull Racing has a strong presence in F1, with innovative designs and exceptional driving talent leading them to multiple championships.</p>
+            </div>
+            <div class="car">
+                <img src="car3.jpg" alt="F1 Car 3">
+                <h2>Ferrari SF21</h2>
+                <p>Ferrari is synonymous with Formula 1, with a long history of success and a passionate global fanbase.</p>
+            </div>
+        </section>
 
-<header>
-    <h1>Impressive Application</h1>
-</header>
-
-<section class="hero">
-    <h2>Experience the Future Today</h2>
-    <p>Our application brings the latest technology to your fingertips. Join us and be part of the innovation.</p>
-    <button>Get Started</button>
-</section>
-
-<section class="features">
-    <div class="feature">
-        <h3>Feature 1</h3>
-        <p>Explore the amazing capabilities that our application offers to boost your productivity.</p>
+        <section class="race-results">
+            <h2>Latest Race Results</h2>
+            <table>
+                <tr>
+                    <th>Position</th>
+                    <th>Driver</th>
+                    <th>Team</th>
+                    <th>Time</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Lewis Hamilton</td>
+                    <td>Mercedes AMG</td>
+                    <td>1:32:45.123</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Max Verstappen</td>
+                    <td>Red Bull Racing</td>
+                    <td>1:32:50.789</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Charles Leclerc</td>
+                    <td>Ferrari</td>
+                    <td>1:33:10.567</td>
+                </tr>
+            </table>
+        </section>
     </div>
-    <div class="feature">
-        <h3>Feature 2</h3>
-        <p>Seamlessly integrate our tools into your workflow and see the difference instantly.</p>
-    </div>
-    <div class="feature">
-        <h3>Feature 3</h3>
-        <p>Experience the next level of efficiency with our cutting-edge solutions.</p>
-    </div>
-</section>
 
-<footer>
-    <p>&copy; 2024 Impressive Application. All rights reserved.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2024 Formula 1 Racing | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
