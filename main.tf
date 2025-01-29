@@ -1,12 +1,12 @@
 provider "google" {
   project = "ferrous-upgrade-446608-k0"
-  region  = "us-central1"
+  region  = "us-east1"
 }
 
 resource "google_compute_instance" "jenkins_vm" {
   name         = "jenkins-vm"
   machine_type = "e2-medium"
-  zone         = "us-central1-a"
+  zone         = "us-east1-a"
 
   boot_disk {
     initialize_params {
