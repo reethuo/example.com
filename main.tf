@@ -1,7 +1,7 @@
 provider "google" {
   project = "aswini-447207"
-  region  = "us-east1"
-  zone    = "us-east1-a"
+  region  = "us-central1"
+  zone    = "us-central1-a"
 }
 
 resource "google_compute_instance" "jenkins_vm" {
