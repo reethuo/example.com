@@ -1,6 +1,7 @@
 provider "google" {
   project = "ferrous-upgrade-446608-k0"
   region  = "us-east1"
+  zone    = "us-east1-a"
 }
 
 resource "google_compute_instance" "jenkins_vm" {
