@@ -1,5 +1,5 @@
 provider "google" {
-  project = "ferrous-upgrade-446608-k0"
+  project = "aswini-447207"
   region  = "us-east1"
   zone    = "us-east1-a"
 }
