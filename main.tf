@@ -1,13 +1,13 @@
 provider "google" {
   project = "aswini-447207"
   region  = "us-central1"
-  zone    = "us-central1-a"
+  zone    = "us-central1-c"
 }
 
 resource "google_compute_instance" "jenkins_vm" {
   name         = "jenkins-vm"
   machine_type = "e2-medium"
-  zone         = "us-central1-a"
+  zone         = "us-central1-c"
 
   boot_disk {
     initialize_params {
@@ -26,7 +26,7 @@ resource "google_compute_instance" "jenkins_vm" {
     sudo apt install -y nginx git
     sudo systemctl start nginx
     sudo systemctl enable nginx
-    git clone https://github.com/reethuo/gcpTfJenkins.git /var/www/html/
+    git clone https://github.com/reethuo/example.com.git /var/www/html/
   EOF
 
   tags = ["web-server"]
